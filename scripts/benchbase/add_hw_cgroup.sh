@@ -1,8 +1,4 @@
-#KEYWORD="132.231.189.16\("
-#KEYWORD="127.0.0.1\("
-#KEYWORD="132.231.91.171\("
-
-KEYWORD="132.231.8.189\("
+KEYWORD='([0-9]{1,3}\.){3}[0-9]{1,3}\('
 count=0
 
 while read -r pid; do

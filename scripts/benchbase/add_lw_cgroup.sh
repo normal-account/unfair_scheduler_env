@@ -1,5 +1,4 @@
 KEYWORD="\[local\]"
-#KEYWORD="burn_cpu"
 count=0
 
 while read -r pid; do
