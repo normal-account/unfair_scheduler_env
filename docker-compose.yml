@@ -1,0 +1,10 @@
+services:
+  sched_ext:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sched_ext
+    command: ["/home/build/postgres/setup_server_postgres_version.sh"]
+    network_mode: "host" 
+    privileged: true
+    cgroup: host

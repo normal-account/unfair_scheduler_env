@@ -1,0 +1,3 @@
+echo Killing created UDFs...
+pgrep -f "\[local\]" | xargs kill -9 2> /dev/null
+pgrep -f "burn_cpu" | xargs kill -9 2> /dev/null
