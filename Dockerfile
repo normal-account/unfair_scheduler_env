@@ -54,11 +54,8 @@ RUN tar xvzf target/benchbase-postgres.tgz
 
 # Copy scripts to container
 COPY scripts/benchbase/* /home/build/benchbase/
-COPY scripts/benchbase/*.xml /home/build/benchbase/config/postgres/
 COPY scripts/postgres/* /home/build/postgres/
 COPY scripts/*.sh /home/build/
-COPY *.c /home/build/
-COPY Makefile /home/build/
 
 # Setup user
 RUN adduser --quiet --disabled-password --gecos ""  aida-user && chown -R aida-user /home/build \
